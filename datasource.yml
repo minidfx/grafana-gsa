@@ -1,0 +1,14 @@
+apiVersion: 1
+
+datasources:
+  - name: KDrive
+    type: marcusolsson-csv-datasource
+    url: $KDRIVE_BRIDGE_HOST/files/$KDRIVE_FILE_ID
+    basicAuth: true
+    basicAuthUser: $BASIC_AUTH_USER
+    jsonData:
+      storage: http
+    secureJsonData:
+      basicAuthPassword: $BASIC_AUTH_PASSWORD
+    editable: false
+    isDefault: true
