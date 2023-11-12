@@ -6,8 +6,9 @@ services:
     ports:
       - 3000:3000
     environment:
-      - GF_INSTALL_PLUGINS=grafana-googlesheets-datasource,marcusolsson-csv-datasource,grafana-clock-panel,marcusolsson-calendar-panel,mxswat-separator-panel
+      - GF_INSTALL_PLUGINS=grafana-googlesheets-datasource,marcusolsson-csv-datasource,grafana-clock-panel,marcusolsson-calendar-panel,mxswat-separator-panel,marcusolsson-json-datasource
       - BASIC_AUTH_PASSWORD=<password>
       - KDRIVE_FILE_ID=<file-id>
       - KDRIVE_BRIDGE_HOST=<host>
       - BASIC_AUTH_USER=<user>
+      - TZ=<tz>

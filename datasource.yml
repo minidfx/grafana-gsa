@@ -12,3 +12,8 @@ datasources:
       basicAuthPassword: $BASIC_AUTH_PASSWORD
     editable: false
     isDefault: true
+  - name: WorldTimeApi
+    type: marcusolsson-json-datasource
+    url: http://worldtimeapi.org/api/timezone/$TZ
+    editable: false
+    isDefault: false
