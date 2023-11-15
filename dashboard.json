@@ -18,6 +18,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
+  "id": 3,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -27,57 +28,6 @@
         "uid": "PDB22284AA13DC148"
       },
       "description": "",
-      "gridPos": {
-        "h": 4,
-        "w": 2,
-        "x": 0,
-        "y": 0
-      },
-      "id": 6,
-      "options": {
-        "code": {
-          "language": "plaintext",
-          "showLineNumbers": false,
-          "showMiniMap": false
-        },
-        "content": "<div style=\"text-align: center;\">\n<div style=\"font-size: 2em\">Semaine</div>\n<div style=\"font-size: 3em\">${week_number}</div>\n</div>",
-        "mode": "html"
-      },
-      "pluginVersion": "10.2.0",
-      "targets": [
-        {
-          "datasource": {
-            "type": "marcusolsson-csv-datasource",
-            "uid": "PDB22284AA13DC148"
-          },
-          "decimalSeparator": ".",
-          "delimiter": ",",
-          "header": true,
-          "ignoreUnknown": false,
-          "refId": "A",
-          "schema": [
-            {
-              "name": "",
-              "type": "string"
-            }
-          ],
-          "skipRows": 0
-        }
-      ],
-      "type": "text"
-    },
-    {
-      "datasource": {
-        "type": "marcusolsson-csv-datasource",
-        "uid": "PDB22284AA13DC148"
-      },
-      "description": "",
-      "gridPos": {
-        "h": 4,
-        "w": 6,
-        "x": 2,
-        "y": 0
-      },
       "id": 5,
       "options": {
         "bgColor": "",
@@ -92,7 +42,7 @@
         },
         "dateSettings": {
           "dateFormat": "YYYY-MM-DD",
-          "fontSize": "3.8em",
+          "fontSize": "2.7em",
           "fontWeight": "normal",
           "locale": "",
           "showDate": true
@@ -101,7 +51,7 @@
         "mode": "time",
         "refresh": "sec",
         "timeSettings": {
-          "fontSize": "5em",
+          "fontSize": "2em",
           "fontWeight": "normal"
         },
         "timezone": "",
@@ -141,9 +91,9 @@
         "uid": "df605117-3e69-4de5-b828-d261d8b61e16"
       },
       "gridPos": {
-        "h": 4,
-        "w": 16,
-        "x": 8,
+        "h": 3,
+        "w": 18,
+        "x": 6,
         "y": 0
       },
       "id": 3,
@@ -162,6 +112,51 @@
           "datasource": {
             "type": "marcusolsson-csv-datasource",
             "uid": "df605117-3e69-4de5-b828-d261d8b61e16"
+          },
+          "decimalSeparator": ".",
+          "delimiter": ",",
+          "header": true,
+          "ignoreUnknown": false,
+          "refId": "A",
+          "schema": [
+            {
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "skipRows": 0
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "marcusolsson-csv-datasource",
+        "uid": "PDB22284AA13DC148"
+      },
+      "description": "",
+      "gridPos": {
+        "h": 2,
+        "w": 24,
+        "x": 0,
+        "y": 3
+      },
+      "id": 6,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<div style=\"text-align:center;font-size:30px;\">\n  Semaine ${week_number}\n</div>",
+        "mode": "html"
+      },
+      "pluginVersion": "10.2.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "PDB22284AA13DC148"
           },
           "decimalSeparator": ".",
           "delimiter": ",",
@@ -222,16 +217,16 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 11,
+        "h": 8,
         "w": 24,
         "x": 0,
-        "y": 4
+        "y": 5
       },
       "id": 2,
       "options": {
-        "annotations": false,
+        "annotations": true,
         "annotationsLimit": 100,
-        "annotationsType": "",
+        "annotationsType": "annotation",
         "autoScroll": true,
         "calendarType": "legacy",
         "colorField": "Color",
@@ -243,7 +238,6 @@
         "labelFields": [
           "Labels"
         ],
-        "locationField": "Location",
         "quickLinks": true,
         "scrollToTime": {
           "hours": 0,
@@ -322,128 +316,28 @@
         "type": "marcusolsson-csv-datasource",
         "uid": "PDB22284AA13DC148"
       },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "mode": "thresholds"
-          },
-          "custom": {
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "red",
-                "value": 80
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
       "gridPos": {
-        "h": 13,
-        "w": 24,
+        "h": 3,
+        "w": 12,
         "x": 0,
-        "y": 15
+        "y": 13
       },
-      "id": 4,
+      "id": 7,
       "options": {
-        "basemap": {
-          "config": {},
-          "name": "Layer 0",
-          "type": "default"
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
         },
-        "controls": {
-          "mouseWheelZoom": true,
-          "showAttribution": true,
-          "showDebug": false,
-          "showMeasure": false,
-          "showScale": false,
-          "showZoom": true
-        },
-        "layers": [
-          {
-            "config": {
-              "showLegend": false,
-              "style": {
-                "color": {
-                  "fixed": "green"
-                },
-                "opacity": 1,
-                "rotation": {
-                  "fixed": 0,
-                  "max": 360,
-                  "min": -360,
-                  "mode": "mod"
-                },
-                "size": {
-                  "fixed": 5,
-                  "max": 15,
-                  "min": 2
-                },
-                "symbol": {
-                  "fixed": "img/icons/marker/circle.svg",
-                  "mode": "fixed"
-                },
-                "symbolAlign": {
-                  "horizontal": "center",
-                  "vertical": "center"
-                },
-                "textConfig": {
-                  "fontSize": 12,
-                  "offsetX": 0,
-                  "offsetY": 0,
-                  "textAlign": "center",
-                  "textBaseline": "middle"
-                }
-              }
-            },
-            "filterData": {
-              "id": "byRefId",
-              "options": "A"
-            },
-            "location": {
-              "gazetteer": "public/gazetteer/countries.json",
-              "geohash": "Location",
-              "latitude": "Latitude",
-              "longitude": "Longitude",
-              "lookup": "Location",
-              "mode": "coords"
-            },
-            "name": "Layer 1",
-            "tooltip": false,
-            "type": "markers"
-          }
-        ],
-        "tooltip": {
-          "mode": "details"
-        },
-        "view": {
-          "allLayers": true,
-          "id": "coords",
-          "lat": 46.280132,
-          "lon": 7.31889,
-          "zoom": 8.82
-        }
+        "content": "<div style=\"font-size: 1em\">\n  Annotation de qqun\n</div>",
+        "mode": "html"
       },
       "pluginVersion": "10.2.0",
       "targets": [
         {
-          "body": "",
           "datasource": {
             "type": "marcusolsson-csv-datasource",
-            "uid": "df605117-3e69-4de5-b828-d261d8b61e16"
+            "uid": "PDB22284AA13DC148"
           },
           "decimalSeparator": ".",
           "delimiter": ",",
@@ -452,32 +346,58 @@
           "refId": "A",
           "schema": [
             {
-              "name": "Longitude",
-              "type": "number"
-            },
-            {
-              "name": "Latitude",
-              "type": "number"
+              "name": "",
+              "type": "string"
             }
           ],
           "skipRows": 0
         }
       ],
-      "transformations": [
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "marcusolsson-csv-datasource",
+        "uid": "PDB22284AA13DC148"
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 12,
+        "y": 13
+      },
+      "id": 8,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "autre chose ...",
+        "mode": "markdown"
+      },
+      "pluginVersion": "10.2.0",
+      "targets": [
         {
-          "id": "filterFieldsByName",
-          "options": {
-            "byVariable": false,
-            "include": {
-              "names": [
-                "Latitude",
-                "Longitude"
-              ]
+          "datasource": {
+            "type": "marcusolsson-csv-datasource",
+            "uid": "PDB22284AA13DC148"
+          },
+          "decimalSeparator": ".",
+          "delimiter": ",",
+          "header": true,
+          "ignoreUnknown": false,
+          "refId": "A",
+          "schema": [
+            {
+              "name": "",
+              "type": "string"
             }
-          }
+          ],
+          "skipRows": 0
         }
       ],
-      "type": "geomap"
+      "type": "text"
     }
   ],
   "refresh": "10s",
@@ -488,8 +408,8 @@
       {
         "current": {
           "selected": false,
-          "text": "45",
-          "value": "45"
+          "text": "46",
+          "value": "46"
         },
         "datasource": {
           "type": "marcusolsson-json-datasource",
@@ -526,9 +446,9 @@
     "to": "now/w"
   },
   "timepicker": {},
-  "timezone": "",
-  "title": "For Calendar Plugin",
-  "uid": "ce3e3e74-7c4a-4fb7-b1f4-dbed10e94a2f",
-  "version": 1,
-  "weekStart": ""
+  "timezone": "Europe/Zurich",
+  "title": "For Calendar Plugin 2",
+  "uid": "ce3e3e74-7c4a-4fb7-b1f4-dbed10e94a2g",
+  "version": 21,
+  "weekStart": "monday"
 }
