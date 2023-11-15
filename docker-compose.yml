@@ -7,10 +7,11 @@ services:
       - 3000:3000
     environment:
       - GF_SECURITY_ADMIN_USER=<user>
-      - GF_SECURITY_ADMIN_PASSWORD=<user>
+      - GF_SECURITY_ADMIN_PASSWORD=<password>
       - GF_INSTALL_PLUGINS=grafana-googlesheets-datasource,marcusolsson-csv-datasource,grafana-clock-panel,marcusolsson-calendar-panel,mxswat-separator-panel,marcusolsson-json-datasource
-      - BASIC_AUTH_PASSWORD=<bridge-password>
-      - KDRIVE_FILE_ID=<file-id>
-      - KDRIVE_BRIDGE_HOST=<bridge-host>
-      - BASIC_AUTH_USER=<bridge-user>
+      - BASIC_AUTH_PASSWORD=<password>o
+      - CALENDAR_KDRIVE_FILE_ID=<file-id>
+      - ANNOTATIONS_KDRIVE_FILE_ID=<file-id>
+      - KDRIVE_BRIDGE_HOST=<host>
+      - BASIC_AUTH_USER=<user>
       - TZ=<tz>

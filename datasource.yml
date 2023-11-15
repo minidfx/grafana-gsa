@@ -1,9 +1,9 @@
 apiVersion: 1
 
 datasources:
-  - name: KDrive
+  - name: Calendars from KDrive
     type: marcusolsson-csv-datasource
-    url: $KDRIVE_BRIDGE_HOST/files/$KDRIVE_FILE_ID
+    url: $KDRIVE_BRIDGE_HOST/files/$CALENDAR_KDRIVE_FILE_ID
     basicAuth: true
     basicAuthUser: $BASIC_AUTH_USER
     jsonData:
@@ -12,6 +12,17 @@ datasources:
       basicAuthPassword: $BASIC_AUTH_PASSWORD
     editable: false
     isDefault: true
+  - name: Annotations from KDrive
+    type: marcusolsson-csv-datasource
+    url: $KDRIVE_BRIDGE_HOST/files/$ANNOTATIONS_KDRIVE_FILE_ID
+    basicAuth: true
+    basicAuthUser: $BASIC_AUTH_USER
+    jsonData:
+      storage: http
+    secureJsonData:
+      basicAuthPassword: $BASIC_AUTH_PASSWORD
+    editable: false
+    isDefault: false
   - name: WorldTimeApi
     type: marcusolsson-json-datasource
     url: http://worldtimeapi.org/api/timezone/$TZ
